@@ -5,10 +5,10 @@
 /**
  * main - entry point
  *
- * Description: false or ture validation
+ * Description: true or false validation
  *
- * return: 0 (success)
- */
+ * Return: 0 (success)
+*/
 
 int main(void)
 {
