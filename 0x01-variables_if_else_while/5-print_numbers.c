@@ -11,7 +11,7 @@ int main(void)
 	int digit;
 
 	for (digit = 0; digit < 10; digit++)
-		printf("%i\n", digit);
+		printf("%d\n", digit);
 
 	return (0);
 
