@@ -1,4 +1,4 @@
-#include"main.h"
+#include "main.h"
 
 /**
  * print_alphabet -function to print alphabets in lower
@@ -7,10 +7,10 @@
  */
 void print_alphabet(void);
 {
-	char l;
+	char c;
 
-	for (l = 'a' ; l <= 'z' ++1)
-		_putchar(l);
+	for (c = 'a' ; c <= 'z' ++c)
+		_putchar(c);
 	_putchar('\n');
 
 }
