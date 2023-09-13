@@ -18,7 +18,7 @@ int main(void)
 			sum += num;
 
 	}
-	prinrf("%d\n", sum);
+	printf("%d\n", sum);
 
 	return (0);
 }
