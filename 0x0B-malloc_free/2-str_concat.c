@@ -13,11 +13,11 @@ char *str_concat(char *s1, char *s2)
 	char *duplicate1;
 	char *duplicate2;
 
-	if (s1 == 0 && s2 == 0)
+	if (s1 == 0 || s2 == 0)
 		return (NULL);
 	duplicate1 = malloc(strlen(s1) + 1);
 	duplicate2 = malloc(strlen(s2) + 1);
-	if (duplicate1 == 0 && duplicate2 == 0)
+	if (duplicate1 == 0 || duplicate2 == 0)
 		return (NULL);
 	strcpy(duplicate1, s1);
 	strcpy(duplicate2, s2);
