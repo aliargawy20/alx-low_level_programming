@@ -8,20 +8,32 @@
   *
   * Return: the two strings concatenated
   */
-char *str_concat(char *s1, char *s2)
+#include <stdlib.h>
+#include <string.h>
+
+char *str_concat(char *s1, char *s2) 
 {
-	char *duplicate1;
-	char *duplicate2;
+	int len1;
+	int len2;
+	char *concatenated;
 
-	if (s1 == 0 || s2 == 0)
-		return (NULL);
-	duplicate1 = malloc(strlen(s1) + 1);
-	duplicate2 = malloc(strlen(s2) + 1);
-	if (duplicate1 == 0 || duplicate2 == 0)
-		return (NULL);
-	strcpy(duplicate1, s1);
-	return (duplicate1);
-	strcpy(duplicate2, s2);
-	return (duplicate2);
+	if (s1 == NULL)
+        s1 = "";
 
+	if (s2 == NULL)
+        s2 = "";
+
+
+	len1 = strlen(s1);
+	len2 = strlen(s2);
+
+	concatenated = malloc((len1 + len2 + 1) * sizeof(char));
+	if (concatenated == NULL)
+	return NULL;
+
+
+	strcpy(concatenated, s1);
+	strcat(concatenated, s2);
+
+	return concatenated;
 }
