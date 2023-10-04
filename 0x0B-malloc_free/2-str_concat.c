@@ -20,8 +20,8 @@ char *str_concat(char *s1, char *s2)
 	if (duplicate1 == 0 || duplicate2 == 0)
 		return (NULL);
 	strcpy(duplicate1, s1);
-	strcpy(duplicate2, s2);
 	return (duplicate1);
+	strcpy(duplicate2, s2);
 	return (duplicate2);
 
 }
